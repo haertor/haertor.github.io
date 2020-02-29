@@ -30,3 +30,4 @@ age=3
 hobby='play games'
 message='{} is {} years old now who liking {}'.format(name,age,hobby)
 print(message)
+
