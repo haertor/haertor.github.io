@@ -1,0 +1,72 @@
+2020.2.29
+今天学到了格式化输出
+以下为今天的python练习：
+(1)
+ticket=60
+count=0.7
+total=ticket*count
+print('now the ticket price is %.2f'%total)
+(2)
+name='lily'
+age=17
+grade=11
+print('%s is %s this year and is %s grade.'%(name,age,grade))
+
+(3)
+message='''
+[amazon]
+you are using code to sign in
+code:12315
+it is important for you account safe,please keep seceret.
+'''
+print(message)
+
+(4)
+name='john'
+age=3
+hobby='play games'
+message='{} is {} years old now who liking {}'.format(name,age,hobby)
+print(message)
+
+2020.3.1
+今天学习了两个知识点
+一、input的使用
+(1)
+print('''
+********************
+      英雄联盟
+********************
+ 	''')
+
+role=input('输入角色：')
+equipment=input('输入拥有的装备：')
+upgrade_equipment=input('输入想要购买装备：')
+pay=input('输入付款金额：')
+
+equipment=upgrade_equipment
+print('{}拥有{}装备，购买此装备花了{}钱'.format(role,upgrade_equipment,pay))
+(2)
+print('''
+*********************
+     high school
+*********************
+''')
+role=input('account')
+password=input('your high school name')
+print('welcome back!\nlong time no see,%s'%role)
+dorm=input('Do you remeber your high school\'s dormitory\nplease wirte down here:')
+print('Great!you still remeber %s!'%dorm)
+those=input('do you remeber thos guys who you had fun with?\nWho are them:')
+print('haha,you remember %s .\nNow I want to do one thing.\nYou can do it,right?\nplease recontect with them!'%those)
+二、赋值，算术运算符
+赋值运算符 =
+算术运算符 +，—，*，/
+扩展运算符 **，//，%
+print('*'*20)
+a=30-20
+b=5+3
+print(a*b)
+
+
+
+
