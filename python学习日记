@@ -67,6 +67,50 @@ a=30-20
 b=5+3
 print(a*b)
 
+2020.3.4
+（一）if语句
+age=int(input('your age:'))
+name=input('your name:')
+if age>18 and name:
+	print('{} is {} years old this year.'{}(name,age))
+print('---------game over---------')
+（二）if else 语句
+print('*'*6,'欢迎回到造梦西游','*'*6)
+print('模式1v1,1v2')
+modle=input('模式选择：')
+if modle=='1v1':
+	print('免费玩 随便玩')
+else:
+	print('充值 买道具 继续玩')
+	money=input('充值金额：')
+	print('充值成功,已充值%s元'%money)
+(三)random的使用
+print('*'*7,'猜大小','*'*7)
+user=input('请输入一个数：')
+import random
+print(random.randint(1,50))
+if user>=' random':
+	print('猜对了！恭喜获得铁三角耳机一副！')
+else:
+	print('猜错啦！请下次再来！')
+(四)多层条件判断
+age=int(input('猜猜逸茶的年龄'))
+if age<=18 and age>0:
+	print('太有眼光啦！')
+elif age>18 and age<=25:
+	print('人家还是宝宝呢.....')
+elif age>25 and age<35:
+	print('看来已经是老阿姨了...')
+else:
+	print('哇的一声哭出来！！')
+(五)for循环
+for i in range(1,6):
+	if i==3:
+		print('第%s个馒头不能吃，有毒！！'%i)
+	else:
+		print('吃%s个馒头。'%i)
+       
+
 
 
 
