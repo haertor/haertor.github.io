@@ -142,6 +142,29 @@ answer=input('确定进入游戏吗？（y/n）')
 		answer=input('是否继续在来一局游戏，要扣除2枚游戏币？（y/n）')
 		if answer!='y' or moeny<2:
 			print('退出游戏啦！')
+2020.3.11
+字符串运算符
+word='hello world'
+print(word[-1:-6:-1])
+print(word[0:5])
+print(word[::-1])
+print(word[-7:-10:-1])
+print(word[2:8])
+字符串的内建函数：
+大小写相关
+s='WDWFNCIIPnfpwfnewqcnWOWF124902310AANFIDSAdafm'
+print(len(s))
+code=''
+import random
+for i in range(4):
+	ran=random.randint(0,len(s)-1)
+	code+=s[ran]
+print('验证码：'+code)
+user_input=input('请输入验证码：')
+if user_input.lower()==code.lower():
+	print('验证码输入正确！')
+else:
+	print('验证码输入错误！')
 			
 	
 
