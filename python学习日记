@@ -165,6 +165,81 @@ if user_input.lower()==code.lower():
 	print('验证码输入正确！')
 else:
 	print('验证码输入错误！')
+2020.3.23
+while True:
+	path=input('请选择文件：')
+	p=path.rfind('\\')
+	filename=path[p+1:]
+	if filename.endswith('jpg')or filename.endswith('png')or filename,endswith('bmp') or filename.endswith('gif'):
+		print('是图片允许上传！')
+	else:
+		print('不是图片格式，只能上传图片！')
+
+s='    hello'
+print(s)
+s=s.lstrip()
+print(s)
+
+a='I love you!'
+a=a.rstrip()
+print(a)
+
+word=input('')
+new=word.replace('东京热','***')
+print(new)
+new=word.replace('苍老师','***')
+print(new)
+
+a='name'
+print(a[-1:-4:-1])
+print('用户名，密码，邮箱加起来不超过20个字符！')
+while True:
+	name=(input('请输入用户名：'))
+	password=(input('请输入密码：'))
+	email=(input('请输入邮箱：'))
+	tatol=len(name)+len(password)+len(email)
+	n=1
+	if tatol<20*n:
+		print('用户名  密码  邮箱\n{}  {}  {}'.format(name,password,email))
+		qa=input('是否还要继续输入(继续添加输入q或Q)：')
+		if qa == 'q' or qa == 'Q':
+			print('选择成功！请继续输入！')
+			n+=1
+		else:
+			print('添加完成！')
+			break
+	else:
+		print('请重新输入！')		
+
+
+
+s1=input('请输入第一个字符串：')
+s2=input('请输入第二个字符串：')
+s3=''
+for i in s1:
+	if i not in s2:
+		s3+=i
+print(s3)
+for i in s2:
+	s1=s1.replace(i,'')
+print(s1)
+
+line=['hello','good','apple','world','digit','alpha']
+l=len(line)
+i=0
+while i<l:
+	if 'good' in line[i] or 'world' in line[i]:
+		del line[i]
+		l-=1
+	i+=1
+print(line)	
+
+import random
+random_list=[]
+for i in range(10):
+	ran=random.randint(1,100)
+	random_list.append(ran)
+print(random_list)
 			
 	
 
