@@ -272,6 +272,140 @@ def add(a, b):
 
 add(4,3)
 add(8,9)
+2020/5/8
+def login(username,password):
+    uname='1412395329'
+    pwd='lby200110230609x'
+
+    for i in range(3):
+        if username == uname and password == pwd:
+            print('登录成功！')
+            break
+        else:
+            print('登录失败！')
+            username = input('账号：')
+            passworf = input('密码：')
+    else:
+            print('账户锁定！')
+
+
+username=input('账号：')
+password=input('密码：')
+login(username,password)
+
+def max(iterable):
+    max = iterable[0]
+    for i in iterable:
+        if i > max:
+            max = i
+    print('最大值是：', max)
+
+
+list1 = [2, 2, 5, 7, 8, 5, 4, 10]
+max(list1)
+
+tuple1 = (3, 2, 6, 9, 0)
+max(tuple1)
+
+def add(name, *args):
+    sum = 0
+    if len(args) > 0:
+        for i in args:
+            sum += i
+        print('%s累加和是:sum:%s' % (name, sum))
+    else:
+        print('没有元素可计算，sum:', sum)
+
+
+add('小猫', 1, 2, 4, 5)
+
+
+students = {'001': ('小明',12), '002': ('小芳', 11), '003': ('小張', 13)}
+def print_stud(persons):
+    if isinstance(persons, dict):
+        values = persons.values()
+        print(values)
+        for name, age in values:
+            print('{}的年齡是:{}'.format(name, age))
+
+
+print_stud(students)
+
+
+
+def add(a, b):
+    result = a + b
+    print(result)
+    return 'aaa'
+
+
+x=add(1, 3)
+print(x)
+
+
+islogin = False
+
+
+def add_shoppingcart(goodsName):
+    if islogin
+        if goodsName:
+            print('成功将{}加入购物车！'.format(goodsName))
+        else:
+            print('没有选中任何商品！')
+    else:
+        answer= input('用户没有登录或者没有添加任何商品！')
+        if answer =='yes':
+            username = input('输入用户名：')
+            password = input('请输入密码：')
+            login(username,password)
+
+
+def login(username, password):
+    if username == 'bettey' and password == 'lby200110230609x':
+        # print('登录成功！')
+        return True
+    else:
+       # print('用户名或密码错误！')
+        return False
+
+
+username = input('输入用户名：')
+password = input('请输入密码：')
+
+islogin = login(username, password)
+
+
+add_shoppingcart('apple watch')
+
+
+import random
+
+
+def generate_checkcode(n):
+    s = '1314iupbfp24825AAFBDSLF330vpofhpqFPFHWEQ204'
+    code = ''
+    for i in range(n):
+        ran = random.randint(0,len(s)-1)
+        code += s[ran]
+        return code
+
+
+def login():
+    username = input('用户名：')
+    password = input('密码：')
+    code = generate_checkcode(6)
+    print('验证码是：', code)
+    code1 = input('输入验证码：')
+    if code.lower() == code1.lower():
+        if username == 'bettey' and password == 'lby200110230609x':
+            print('用户登录成功')
+        else:
+            print('用户名或密码错误！')
+    else:
+        print('验证码输入错误！')
+
+
+login()
 
        
 
